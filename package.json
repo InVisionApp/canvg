@@ -16,8 +16,12 @@
   },
   "main": "canvg.js",
   "version": "1.0.0",
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "uglify-js": "^3.4.5"
+  },
+  "scripts": {
+    "minify": "uglifyjs --mangle --compress if_return=true -o canvg.min.js canvg.js"
+  },
   "license": "MIT",
   "files": [
     "canvg.js",
